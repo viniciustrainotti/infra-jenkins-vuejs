@@ -13,7 +13,7 @@ pipeline {
         stage('Clone and Checkout') {
             steps {
                 git credentialsId: 'git_id',
-                url: 'http://git.franciscanos.net/moodle/frontend-ead-grade-dashboard.git',
+                url: 'http://github.com/viniciustrainotti/frontend-ead-grade-dashboard.git',
                 branch: 'master'
 
                 sh "git checkout master"
